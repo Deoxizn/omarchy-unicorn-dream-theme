@@ -1,7 +1,7 @@
 # omarchy-unicorn-dream-theme  
 &nbsp;  
 &nbsp;    
-Unicorn Pastel theme aimed at little girls who may have Omarchy on their PCs.. or just anyone who likes this Pallete and unicorns includes a matching themes for GTK3/GTK4, Waybar, and Vesktop
+Unicorn Pastel theme aimed at little girls who may have Omarchy on their PCs.. or just anyone who likes this palette and unicorns includes a matching themes for GTK3/GTK4, Waybar, and Vesktop
 &nbsp;  
 &nbsp;  
 &nbsp;  
