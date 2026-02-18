@@ -1,0 +1,440 @@
+/**
+ * @name Unicorn Dream Vesktop
+ * @description Pastel pink Discord theme for Unicorn Dream
+ * @version 1.0.0
+ * @author Unicorn Dream Theme
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Unicorn Dream Pastel Colors */
+  --unicorn-bg: #fff0f5;
+  --unicorn-fg: #5c3a4a;
+  --unicorn-accent: #f8b5c6;
+  --unicorn-accent-light: #fcd4dc;
+  --unicorn-secondary: #ffe4e9;
+  --unicorn-dark: #d4a5b5;
+  --unicorn-pink-soft: #f8a5b5;
+  --unicorn-yellow: #f5d78e;
+  --unicorn-cream: #f0e6d8;
+  --unicorn-white: #ffffff;
+
+  /* Semantic color mapping */
+  --ud-bg-primary: var(--unicorn-bg);
+  --ud-bg-secondary: var(--unicorn-secondary);
+  --ud-bg-tertiary: var(--unicorn-accent-light);
+  --ud-bg-hover: rgba(248, 181, 198, 0.15);
+  --ud-bg-active: rgba(248, 181, 198, 0.25);
+  --ud-bg-selected: rgba(248, 181, 198, 0.35);
+  --ud-bg-mention: linear-gradient(90deg, rgba(248, 181, 198, 0.25) 0%, rgba(255, 240, 245, 0.1) 100%);
+
+  --ud-text-primary: var(--unicorn-fg);
+  --ud-text-secondary: rgba(92, 58, 74, 0.75);
+  --ud-text-muted: rgba(92, 58, 74, 0.55);
+  --ud-text-inverse: var(--unicorn-bg);
+
+  --ud-accent: var(--unicorn-accent);
+  --ud-accent-hover: #f9a0b8;
+  --ud-accent-soft: rgba(248, 181, 198, 0.6);
+
+  --ud-border: rgba(92, 58, 74, 0.12);
+  --ud-border-subtle: rgba(92, 58, 74, 0.08);
+  --ud-shadow: rgba(92, 58, 74, 0.08);
+
+  /* Font */
+  --font-primary: "Quicksand", "gg sans", sans-serif;
+  --font-display: "Quicksand", "gg sans", sans-serif;
+}
+
+/* Light theme base - force light mode for pastel colors */
+.theme-light,
+.theme-dark {
+  /* Backgrounds */
+  --background-primary: var(--ud-bg-primary) !important;
+  --background-secondary: var(--ud-bg-secondary) !important;
+  --background-secondary-alt: var(--ud-bg-secondary) !important;
+  --background-tertiary: var(--ud-bg-secondary) !important;
+  --background-accent: var(--ud-bg-tertiary) !important;
+  --background-floating: var(--ud-bg-secondary) !important;
+  
+  --background-base-lowest: var(--ud-bg-primary) !important;
+  --background-base-lower: var(--ud-bg-primary) !important;
+  --background-base-low: var(--ud-bg-secondary) !important;
+  --background-base-tertiary: var(--ud-bg-secondary) !important;
+  
+  --background-surface-high: var(--ud-bg-secondary) !important;
+  --background-surface-higher: var(--ud-bg-tertiary) !important;
+  --background-surface-highest: var(--unicorn-white) !important;
+  --bg-surface-raised: var(--ud-bg-secondary) !important;
+  --bg-surface-overlay: var(--ud-bg-secondary) !important;
+  --bg-base-secondary: var(--ud-bg-secondary) !important;
+  --bg-base-tertiary: var(--ud-bg-secondary) !important;
+  --bg-overlay-2: var(--ud-bg-secondary) !important;
+  --bg-overlay-3: var(--ud-bg-tertiary) !important;
+
+  /* Modifiers */
+  --background-modifier-accent: var(--ud-bg-hover) !important;
+  --background-modifier-hover: var(--ud-bg-hover) !important;
+  --background-modifier-active: var(--ud-bg-active) !important;
+  --background-modifier-selected: var(--ud-bg-selected) !important;
+  --background-mentioned: var(--ud-bg-mention) !important;
+  --background-mentioned-hover: linear-gradient(90deg, rgba(248, 181, 198, 0.35) 0%, rgba(255, 240, 245, 0.15) 100%) !important;
+  --mention-background: rgba(248, 181, 198, 0.25) !important;
+  --mention-foreground: var(--ud-text-primary) !important;
+
+  /* Text */
+  --text-normal: var(--ud-text-primary) !important;
+  --text-muted: var(--ud-text-muted) !important;
+  --text-primary: var(--ud-text-primary) !important;
+  --text-secondary: var(--ud-text-secondary) !important;
+  --header-primary: var(--ud-text-primary) !important;
+  --header-secondary: var(--ud-text-secondary) !important;
+  --interactive-normal: var(--ud-text-primary) !important;
+  --interactive-hover: var(--ud-text-primary) !important;
+  --interactive-active: var(--ud-accent) !important;
+  --interactive-muted: var(--ud-text-muted) !important;
+
+  /* Channels */
+  --channels-default: var(--ud-text-secondary) !important;
+  --channels-default-muted: var(--ud-text-muted) !important;
+  --channels-default-unread: var(--ud-accent) !important;
+
+  /* Accents */
+  --brand-500: var(--ud-accent) !important;
+  --brand-560: var(--ud-accent-soft) !important;
+  --text-link: var(--ud-accent) !important;
+  --channel-icon: var(--ud-accent) !important;
+  --focus-primary: var(--ud-accent) !important;
+  --input-border-focus: var(--ud-accent) !important;
+
+  /* Buttons */
+  --button-filled-brand-background: var(--ud-accent) !important;
+  --button-filled-brand-background-hover: var(--ud-accent-hover) !important;
+  --button-filled-brand-text: var(--ud-text-inverse) !important;
+
+  --button-positive-background: var(--unicorn-yellow) !important;
+  --button-positive-background-hover: #f7cf6b !important;
+  --button-positive-text: var(--ud-text-primary) !important;
+
+  --button-secondary-background: var(--ud-bg-tertiary) !important;
+  --button-secondary-background-hover: var(--ud-accent-light) !important;
+  --button-secondary-text: var(--ud-text-primary) !important;
+
+  --button-danger-background: var(--unicorn-pink-soft) !important;
+  --button-danger-background-hover: #f795a8 !important;
+  --button-danger-text: var(--ud-text-inverse) !important;
+
+  /* Status */
+  --status-positive: var(--unicorn-yellow) !important;
+  --status-warning: var(--unicorn-yellow) !important;
+  --status-danger: var(--unicorn-pink-soft) !important;
+
+  /* Scrollbar */
+  --scrollbar-thin-thumb: var(--ud-accent-soft) !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-thumb: var(--ud-accent) !important;
+  --scrollbar-auto-track: var(--ud-bg-secondary) !important;
+
+  /* Other */
+  --channeltextarea-background: var(--ud-bg-secondary) !important;
+  --activity-card-background: var(--ud-bg-secondary) !important;
+  --deprecated-card-bg: var(--ud-bg-secondary) !important;
+  --deprecated-card-editable-bg: var(--ud-bg-secondary) !important;
+  --deprecated-store-bg: var(--ud-bg-primary) !important;
+  --deprecated-quickswitcher-input-background: var(--ud-bg-secondary) !important;
+  --deprecated-quickswitcher-input-placeholder: var(--ud-text-muted) !important;
+  --deprecated-text-input-bg: var(--ud-bg-secondary) !important;
+  --deprecated-text-input-border: var(--ud-border) !important;
+  --deprecated-text-input-border-hover: var(--ud-accent) !important;
+  --deprecated-text-input-border-disabled: var(--ud-border-subtle) !important;
+  --deprecated-text-input-prefix: var(--ud-text-secondary) !important;
+}
+
+/* Font override */
+body {
+  font-family: var(--font-primary) !important;
+}
+
+/* Message text */
+[class*="messageContent"],
+[class*="markup"] {
+  color: var(--ud-text-primary) !important;
+}
+
+/* Username colors - pastel variations */
+[class*="username"] {
+  color: var(--ud-accent) !important;
+  font-weight: 600 !important;
+}
+
+/* Channel list styling */
+a[data-list-item-id^="channels___"] {
+  border-radius: 8px !important;
+  margin: 2px 8px !important;
+}
+
+a[data-list-item-id^="channels___"][aria-selected="true"] {
+  background-color: var(--ud-bg-selected) !important;
+  box-shadow: inset 3px 0 0 0 var(--ud-accent) !important;
+}
+
+a[data-list-item-id^="channels___"]:hover {
+  background-color: var(--ud-bg-hover) !important;
+}
+
+a[data-list-item-id^="channels___"] [class*="name"] {
+  color: var(--ud-text-secondary) !important;
+}
+
+a[data-list-item-id^="channels___"][class*="modeUnread"] [class*="name"] {
+  color: var(--ud-accent) !important;
+  font-weight: 600 !important;
+}
+
+a[data-list-item-id^="channels___"][aria-selected="true"] [class*="name"] {
+  color: var(--ud-accent) !important;
+}
+
+/* Server list styling */
+[class*="wrapper"][class*="guilds"] {
+  background-color: var(--ud-bg-secondary) !important;
+}
+
+[class*="listItem"] [class*="wrapper"] {
+  border-radius: 12px !important;
+}
+
+[class*="listItem"]:hover [class*="wrapper"] {
+  background-color: var(--ud-bg-hover) !important;
+}
+
+/* Unread indicators */
+[class*="unread"],
+[class*="unreadBar"],
+[class*="numberBadge"],
+[class*="textBadge"] {
+  background-color: var(--ud-accent) !important;
+  color: var(--ud-text-inverse) !important;
+}
+
+/* Mention pills */
+[class*="mention"] {
+  background-color: var(--ud-accent-soft) !important;
+  color: var(--ud-text-primary) !important;
+  border-radius: 4px !important;
+  padding: 1px 4px !important;
+}
+
+[class*="mention"]:hover {
+  background-color: var(--ud-accent) !important;
+  color: var(--ud-text-inverse) !important;
+}
+
+/* Message hover effect */
+[class*="messageListItem"]:hover,
+[class*="messageListItem"]:hover > [class*="message"] {
+  background-color: var(--ud-bg-hover) !important;
+  border-radius: 8px !important;
+}
+
+/* Reply highlight */
+[class*="replying"] {
+  background-color: var(--ud-bg-mention) !important;
+  border-left: 3px solid var(--ud-accent) !important;
+  border-radius: 8px !important;
+}
+
+/* Text input area */
+[class*="channelTextArea"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 12px !important;
+}
+
+[class*="channelTextArea"]:focus-within {
+  box-shadow: 0 0 0 2px var(--ud-accent-soft) !important;
+}
+
+[class*="scrollableContainer"] {
+  background-color: transparent !important;
+}
+
+/* Search and input fields */
+[class*="searchBar"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 8px !important;
+}
+
+input,
+textarea {
+  color: var(--ud-text-primary) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--ud-text-muted) !important;
+}
+
+/* Popouts and menus */
+[class*="menu"],
+[class*="popout"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px var(--ud-shadow) !important;
+}
+
+[class*="item"]:hover {
+  background-color: var(--ud-bg-hover) !important;
+}
+
+/* Tooltips */
+[class*="tooltip"] {
+  background-color: var(--ud-accent) !important;
+  color: var(--ud-text-inverse) !important;
+  border-radius: 6px !important;
+}
+
+/* Settings panels */
+[class*="sidebarRegion"] {
+  background-color: var(--ud-bg-secondary) !important;
+}
+
+[class*="contentRegion"] {
+  background-color: var(--ud-bg-primary) !important;
+}
+
+/* Member list */
+[class*="members"] {
+  background-color: var(--ud-bg-secondary) !important;
+}
+
+[class*="member"] {
+  border-radius: 8px !important;
+  margin: 2px 8px !important;
+}
+
+[class*="member"]:hover {
+  background-color: var(--ud-bg-hover) !important;
+}
+
+/* Embed styling */
+[class*="embedFull"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 8px !important;
+}
+
+/* Code blocks */
+[class*="codeBlock"] {
+  background-color: var(--ud-bg-tertiary) !important;
+  border-radius: 6px !important;
+}
+
+/* Reaction buttons */
+[class*="reaction"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 8px !important;
+}
+
+[class*="reaction"]:hover {
+  background-color: var(--ud-bg-hover) !important;
+}
+
+[class*="reaction"][class*="reactionMe"] {
+  background-color: var(--ud-accent-soft) !important;
+  border-color: var(--ud-accent) !important;
+}
+
+/* Jump to present bar */
+[class*="jumpToPresentBar"] {
+  background-color: var(--ud-accent) !important;
+  color: var(--ud-text-inverse) !important;
+  border-radius: 20px !important;
+  bottom: 16px !important;
+}
+
+/* New messages divider */
+[class*="isUnread"] {
+  border-color: var(--ud-accent) !important;
+}
+
+[class*="isUnread"] [class*="content"] {
+  color: var(--ud-accent) !important;
+  background-color: var(--ud-bg-secondary) !important;
+}
+
+/* Spoiler tags */
+[class*="spoilerText"] {
+  background-color: var(--ud-bg-tertiary) !important;
+}
+
+[class*="spoilerText"][class*="hidden"] {
+  background-color: var(--ud-accent-soft) !important;
+}
+
+/* Profile cards */
+[class*="userPopout"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 16px !important;
+}
+
+[class*="userPopout"] [class*="banner"] {
+  border-radius: 16px 16px 0 0 !important;
+}
+
+/* Buttons */
+button[class*="lookFilled"] {
+  border-radius: 8px !important;
+}
+
+button[class*="lookOutlined"] {
+  border-color: var(--ud-accent) !important;
+  color: var(--ud-accent) !important;
+  border-radius: 8px !important;
+}
+
+button[class*="lookOutlined"]:hover {
+  background-color: var(--ud-accent-soft) !important;
+}
+
+/* Toggle switches */
+[class*="control"] [class*="checked"] {
+  background-color: var(--ud-accent) !important;
+}
+
+/* Slider controls */
+[class*="slider"] [class*="track"] {
+  background-color: var(--ud-bg-tertiary) !important;
+}
+
+[class*="slider"] [class*="barFill"] {
+  background-color: var(--ud-accent) !important;
+}
+
+[class*="slider"] [class*="grabber"] {
+  background-color: var(--ud-accent) !important;
+  border-color: var(--ud-accent) !important;
+}
+
+/* Emoji picker */
+[class*="emojiPicker"] {
+  background-color: var(--ud-bg-secondary) !important;
+  border-radius: 16px !important;
+}
+
+[class*="emojiPicker"] [class*="header"] {
+  background-color: var(--ud-bg-secondary) !important;
+}
+
+[class*="categoryList"] {
+  background-color: var(--ud-bg-tertiary) !important;
+}
+
+/* Chat header */
+[class*="chatContent"] [class*="container"] {
+  background-color: var(--ud-bg-primary) !important;
+}
+
+/* Thread spine */
+[class*="spine"] {
+  color: var(--ud-accent-soft) !important;
+}

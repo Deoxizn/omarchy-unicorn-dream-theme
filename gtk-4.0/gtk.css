@@ -1,0 +1,104 @@
+/* Unicorn Dream Theme - GTK4/libadwaita CSS Variables */
+
+:root {
+  /* Core colors */
+  --unicorn-bg: #fff0f5;
+  --unicorn-fg: #5c3a4a;
+  --unicorn-accent: #f8b5c6;
+  --unicorn-accent-light: #fcd4dc;
+  --unicorn-secondary: #ffe4e9;
+  --unicorn-dark: #d4a5b5;
+  
+  /* Libadwaita color variables */
+  --accent-bg-color: #f8b5c6;
+  --accent-fg-color: #fff0f5;
+  --accent-color: #f8b5c6;
+  
+  --window-bg-color: #fff0f5;
+  --window-fg-color: #5c3a4a;
+  
+  --view-bg-color: #fff0f5;
+  --view-fg-color: #5c3a4a;
+  
+  --sidebar-bg-color: #ffe4e9;
+  --sidebar-fg-color: #5c3a4a;
+  --sidebar-backdrop-color: #ffe4e9;
+  --sidebar-shade-color: #fcd4dc;
+  
+  --headerbar-bg-color: #fcd4dc;
+  --headerbar-fg-color: #5c3a4a;
+  --headerbar-backdrop-color: #ffe4e9;
+  --headerbar-shade-color: #fcd4dc;
+  
+  --card-bg-color: #ffe4e9;
+  --card-fg-color: #5c3a4a;
+  
+  --popover-bg-color: #ffe4e9;
+  --popover-fg-color: #5c3a4a;
+  
+  --dialog-bg-color: #fff0f5;
+  --dialog-fg-color: #5c3a4a;
+  
+  --borders: rgba(92, 58, 74, 0.1);
+}
+
+/* Override for backdrop windows */
+window:backdrop {
+  --window-bg-color: #ffe4e9;
+  --headerbar-bg-color: #ffe4e9;
+}
+
+/* GTK3 compatibility - define colors for legacy apps */
+@define-color accent_bg_color #f8b5c6;
+@define-color accent_fg_color #fff0f5;
+@define-color accent_color #f8b5c6;
+
+@define-color window_bg_color #fff0f5;
+@define-color window_fg_color #5c3a4a;
+
+@define-color view_bg_color #fff0f5;
+@define-color view_fg_color #5c3a4a;
+@define-color sidebar_bg_color #ffe4e9;
+@define-color sidebar_fg_color #5c3a4a;
+@define-color sidebar_backdrop_color #ffe4e9;
+@define-color sidebar_shade_color #fcd4dc;
+
+@define-color headerbar_bg_color #fcd4dc;
+@define-color headerbar_fg_color #5c3a4a;
+@define-color headerbar_backdrop_color #ffe4e9;
+@define-color headerbar_shade_color #fcd4dc;
+@define-color card_bg_color #ffe4e9;
+@define-color card_fg_color #5c3a4a;
+
+@define-color popover_bg_color #ffe4e9;
+@define-color popover_fg_color #5c3a4a;
+
+@define-color dialog_bg_color #fff0f5;
+@define-color dialog_fg_color #5c3a4a;
+
+@define-color borders alpha(#5c3a4a, 0.1);
+
+/* GTK3 legacy */
+@define-color theme_fg_color #5c3a4a;
+@define-color theme_text_color #5c3a4a;
+@define-color theme_bg_color #fff0f5;
+@define-color theme_base_color #fff0f5;
+@define-color theme_selected_bg_color #f8b5c6;
+@define-color theme_selected_fg_color #fff0f5;
+@define-color insensitive_bg_color #fff0f5;
+@define-color insensitive_fg_color #d4a5b5;
+@define-color insensitive_base_color #fff0f5;
+@define-color theme_unfocused_fg_color #5c3a4a;
+@define-color theme_unfocused_text_color #5c3a4a;
+@define-color theme_unfocused_bg_color #fff0f5;
+@define-color theme_unfocused_base_color #fff0f5;
+@define-color theme_unfocused_selected_bg_color #f8b5c6;
+@define-color theme_unfocused_selected_fg_color #fff0f5;
+@define-color unfocused_insensitive_color #d4a5b5;
+@define-color unfocused_borders alpha(#5c3a4a, 0.1);
+@define-color warning_color #f9e2af;
+@define-color error_color #f8a5b5;
+@define-color success_color #a6e3a1;
+@define-color destructive_color #f8a5b5;
+@define-color content_view_bg #fff0f5;
+@define-color text_view_bg #fff0f5;

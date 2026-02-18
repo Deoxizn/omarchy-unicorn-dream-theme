@@ -1,0 +1,71 @@
+/* Unicorn Dream Theme - GTK3 Colors */
+
+@define-color unicorn_bg #fff0f5;
+@define-color unicorn_fg #5c3a4a;
+@define-color unicorn_accent #f8b5c6;
+@define-color unicorn_accent_light #fcd4dc;
+@define-color unicorn_secondary #ffe4e9;
+@define-color unicorn_dark #d4a5b5;
+
+/* =============================================
+   GTK3 THEME COLOR VARIABLES
+   ============================================= */
+
+@define-color theme_fg_color @unicorn_fg;
+@define-color theme_text_color @unicorn_fg;
+@define-color theme_bg_color @unicorn_bg;
+@define-color theme_base_color @unicorn_bg;
+@define-color theme_selected_bg_color @unicorn_accent;
+@define-color theme_selected_fg_color @unicorn_bg;
+@define-color insensitive_bg_color @unicorn_bg;
+@define-color insensitive_fg_color @unicorn_dark;
+@define-color insensitive_base_color @unicorn_bg;
+@define-color theme_unfocused_fg_color @unicorn_fg;
+@define-color theme_unfocused_text_color @unicorn_fg;
+@define-color theme_unfocused_bg_color @unicorn_bg;
+@define-color theme_unfocused_base_color @unicorn_bg;
+@define-color theme_unfocused_selected_bg_color @unicorn_accent;
+@define-color theme_unfocused_selected_fg_color @unicorn_bg;
+@define-color unfocused_insensitive_color @unicorn_dark;
+@define-color unfocused_borders alpha(@unicorn_fg, 0.1);
+@define-color warning_color #f9e2af;
+@define-color error_color #f8a5b5;
+@define-color success_color #a6e3a1;
+@define-color destructive_color #f8a5b5;
+
+@define-color content_view_bg @unicorn_bg;
+@define-color text_view_bg @unicorn_bg;
+
+@define-color borders alpha(@unicorn_fg, 0.1);
+
+/* =============================================
+   ACCENT COLORS FOR GTK3
+   ============================================= */
+
+@define-color accent_bg_color @unicorn_accent;
+@define-color accent_fg_color @unicorn_bg;
+@define-color accent_color @unicorn_accent;
+
+/* =============================================
+   WINDOW AND DIALOG COLORS
+   ============================================= */
+
+@define-color window_bg_color @unicorn_bg;
+@define-color window_fg_color @unicorn_fg;
+
+@define-color view_bg_color @unicorn_bg;
+@define-color view_fg_color @unicorn_fg;
+@define-color sidebar_bg_color @unicorn_secondary;
+@define-color sidebar_fg_color @unicorn_fg;
+
+@define-color headerbar_bg_color @unicorn_accent_light;
+@define-color headerbar_fg_color @unicorn_fg;
+@define-color headerbar_backdrop_color @unicorn_secondary;
+@define-color card_bg_color @unicorn_secondary;
+@define-color card_fg_color @unicorn_fg;
+
+@define-color popover_bg_color @unicorn_secondary;
+@define-color popover_fg_color @unicorn_fg;
+
+@define-color dialog_bg_color @unicorn_bg;
+@define-color dialog_fg_color @unicorn_fg;
