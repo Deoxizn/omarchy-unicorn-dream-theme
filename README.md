@@ -1,7 +1,7 @@
 # omarchy-unicorn-dream-theme  
 &nbsp;  
 &nbsp;    
-Unicorn Pastel theme aimed at little girls who may have Omarchy on their PCs.. or just anyone who likes this palette and unicorns includes a matching themes for GTK3/GTK4, Waybar, and Vesktop
+Unicorn Dream Theme - A dreamy pastel unicorn theme featuring soft pinks (#f8b5c6), lavender blush (#fff0f5), and warm cream tones. Includes matching GTK3/GTK4, Waybar, and Vesktop themes, plus a curated collection of adorable unicorn wallpapers in cartoon, kawaii, and watercolor styles.
 &nbsp;  
 &nbsp;  
 &nbsp;  
