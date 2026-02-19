@@ -1,15 +1,6 @@
 /* Unicorn Dream Waybar Theme - Pastel Pink */
 
-@define-color background #fff0f5;
-@define-color foreground #5c3a4a;
-@define-color accent #f8b5c6;
-@define-color accent-light #fcd4dc;
-@define-color secondary #ffe4e9;
-@define-color dark #d4a5b5;
-
-/* Semantic aliases */
-@define-color bright-black #d4a5b5;
-@define-color bright-white #ffffff;
+@import "{{ omarchy_path }}/current/theme/waybar.css";
 
 /* --- Global-Settings ---*/
 * {
@@ -44,7 +35,7 @@ window#waybar.empty #window {
     border-radius: 999px;
     padding: 4px 6px;
     background-color: alpha(@background, 0.95);
-    box-shadow: 0 2px 4px alpha(@dark, 0.2);
+    box-shadow: 0 2px 4px alpha(#000000, 0.2);
 }
 
 /* --- Tooltip ---*/
@@ -77,14 +68,14 @@ tooltip label {
 }
 
 #workspaces button.active {
-    background-color: @accent;
-    color: @foreground;
+    background-color: @foreground;
+    color: @background;
     border-radius: 999px;
 }
 
 #workspaces button:hover {
-    background-color: alpha(@accent, 0.6);
-    color: @foreground;
+    background-color: alpha(@foreground, 0.4);
+    color: @background;
     border-radius: 999px;
 }
 
@@ -123,7 +114,7 @@ tooltip label {
 
 #custom-voxtype.recording {
     background-color: transparent;
-    color: #a55555;
+    color: @foreground;
 }
 
 /* --- Hover --- */
@@ -141,14 +132,14 @@ tooltip label {
 #custom-power:hover,
 #idle_inhibitor:hover {
     border-radius: 999px;
-    background-color: alpha(@accent, 0.4);
+    background-color: alpha(@foreground, 0.2);
     color: @foreground;
     opacity: 1;
 }
 
 /* --- Battery states --- */
 #battery.warning {
-    color: #c95d0f;
+    color: @foreground;
 }
 
 #battery.critical:not(.charging) {
@@ -165,6 +156,6 @@ tooltip label {
 @keyframes blink2 {
     to {
         background-color: alpha(@background, 0.85);
-        color: #f53c3c;
+        color: @foreground;
     }
 }
